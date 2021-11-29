@@ -1,12 +1,12 @@
-import React from "react";
-import FormField from "./FormField";
+import React from 'react';
 import {
   FormControl,
   InputLabel,
   Select as MUISelect,
   MenuItem,
   FormHelperText,
-} from "@material-ui/core";
+} from '@mui/material';
+import FormField from './FormField';
 
 const Select = React.forwardRef((props, ref) => (
   <FormField ref={ref} Component={SelectImpl} {...props} />
@@ -16,7 +16,7 @@ const SelectImpl = React.forwardRef(
   (
     {
       label,
-      name = "",
+      name = '',
       variant,
       size,
       value,
@@ -27,13 +27,13 @@ const SelectImpl = React.forwardRef(
       style,
       defaultItem,
       items,
-      nameField = "name",
-      valueField = "value",
+      nameField = 'name',
+      valueField = 'value',
       ...restProps
     },
     ref
   ) => {
-    const inputId = name.replace(".", "-");
+    const inputId = name.replace('.', '-');
 
     let menuItems = [];
     if (items) {

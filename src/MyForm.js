@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 import TextField from './components/TextField';
 import Select from './components/Select';
 import RadioGroup from './components/RadioGroup';

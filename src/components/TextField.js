@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField as MUITextField } from '@material-ui/core';
+import { TextField as MUITextField } from '@mui/material';
 import FormField from './FormField';
 
 const TextField = React.forwardRef((props, ref) => (

@@ -6,7 +6,7 @@ import {
   Radio,
   FormControlLabel,
   FormHelperText,
-} from '@material-ui/core';
+} from '@mui/material';
 import FormField from './FormField';
 
 const RadioGroup = React.forwardRef((props, ref) => (

@@ -6,7 +6,7 @@ import {
   Checkbox,
   FormControlLabel,
   FormHelperText,
-} from '@material-ui/core';
+} from '@mui/material';
 import FormField from './FormField';
 
 const CheckboxGroup = React.forwardRef((props, ref) => (

@@ -2,18 +2,7 @@ import React from 'react';
 import { Controller, useFormState } from 'react-hook-form';
 
 const FormField = React.forwardRef(
-  (
-    {
-      name,
-      label,
-      Component,
-      rules,
-      variant = 'outlined',
-      size = 'small',
-      ...restProps
-    },
-    ref
-  ) => {
+  ({ name, Component, rules, ...restProps }, ref) => {
     const formState = useFormState();
     return (
       <Controller
@@ -27,9 +16,6 @@ const FormField = React.forwardRef(
             ref={ref}
             error={Boolean(formState.errors && formState.errors[name])}
             helperText={formState.errors && formState.errors[name]?.message}
-            label={label}
-            variant={variant}
-            size={size}
             {...restProps}
           />
         )}
